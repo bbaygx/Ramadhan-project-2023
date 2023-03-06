@@ -1,0 +1,152 @@
+/* .bg-content{
+    background: url('/assets/Background.png') center no-repeat;
+    width: 100%;
+    height: 100vh;
+    
+} */
+ body,html{
+    height: 100%;
+}
+
+/* .header-bg{
+    background-image: url('/assets/Background.png');
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-attachment: fixed;
+} */
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateY(-8px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateY(8px);
+	}
+
+	80% {
+		transform: translateY(6.4px);
+	}
+
+	90% {
+		transform: translateY(-6.4px);
+	}
+}
+@keyframes myAnimleft {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(10px);
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
+}
+
+.icons{
+    position:relative
+}
+.left-icons{
+    position: relative;
+}
+.left-icons img:nth-child(1){
+    position: absolute;
+    top:0;
+    animation: bounce;
+    padding-top: 3rem;
+    margin: auto;
+    width: 400px;
+    animation: myAnim 20s ease-in 0s infinite normal forwards;
+
+}
+.left-icons img:nth-child(2){
+    position: absolute;
+    top:0;
+    animation: myAnimleft 12s ease-in 0s infinite normal forwards;
+}
+.left-icons img:nth-child(3){
+    position: absolute;
+    top:0;
+    animation: myAnimleft 6s ease-in 0s infinite normal forwards;
+}
+
+/* Center icons
+.center-icons{
+    position: relative;
+    width: 300px
+}
+.center-icons img:nth-child(1){
+    animation: myAnim 6s ease-in 0s infinite normal forwards;
+}
+.center-icons img:nth-child(2){
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    width: 450px
+    
+} */
+
+@media screen and (max-width:640px){
+    .left-icons img:nth-child(1){
+    top:0;
+    padding-top: 3rem;
+    width: 500px
+}
+.left-icons img:nth-child(2){
+    position: absolute;
+    top:0;
+    
+}
+.left-icons img:nth-child(3){
+    position: absolute;
+    top:0;
+}
+}
+
+@media screen and (max-width:1366px){
+    .left-icons img:nth-child(1){
+    top:0;
+    left: 15%;
+    padding-top: 3rem;
+    width: 450px
+}
+.left-icons img:nth-child(2){
+    position: absolute;
+    top:0;
+    width: 150px;
+    left: 5%;
+}
+.left-icons img:nth-child(3){
+    position: absolute;
+    top:0;
+    width: 120px;
+}
+}
