@@ -9,7 +9,7 @@
 }
 
 .header-bg{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,23 +98,36 @@
     animation: myAnimleft 6s ease-in 0s infinite normal forwards;
 }
 
-/* Center icons
+ Center icons
 .center-icons{
     position: relative;
-    width: 300px
 }
 .center-icons img:nth-child(1){
-    animation: myAnim 6s ease-in 0s infinite normal forwards;
+    animation: myAnim 8s ease-in 0s infinite normal forwards;
 }
-.center-icons img:nth-child(2){
+/* .center-icons img:nth-child(2){
     position: absolute;
     right: 15%;
     top: 50%;
     width: 450px
     
-} */
+} */ */
+@media screen and (max-width:412px){
+    .header-bg{
+        height: 65vh;
+    }
+    .left-icons img:nth-child(1){
+        width: 450px;
+    }
+}
+@media screen and (max-width:870px){
 
+}
 @media screen and (max-width:640px){
+    /* .header-bg{
+        height: 70%;
+    } */
+
     .left-icons img:nth-child(1){
     top:0;
     padding-top: 3rem;
